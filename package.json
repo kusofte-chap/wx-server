@@ -7,5 +7,10 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "fs-extra-promise": "^1.0.1",
+    "koa": "^2.14.2",
+    "koa-mount": "^4.0.0"
+  }
 }
