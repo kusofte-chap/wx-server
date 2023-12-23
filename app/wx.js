@@ -15,14 +15,7 @@ function tss() {
 }
 
 function* getJsApiSign(referer) {
-    // function* getJsApiSign (req) {
-    // const referer = req.get('referer') || ''
-    // var refhost = url.parse(referer).hostname
-    // if (!_.any(config.wxm.trustedhosts, function(host){
-    //   return isOf(host, refhost)
-    // })) {
-    //   return cb(new Error('host not trusted'))
-    // }
+
     const { ticket } = yield getJsApiTicket()
         //const sign = wxsign(ticket, fullUrl(req))
     const { jsapi_ticket, timestamp, signature, nonceStr } = wxsign(ticket, referer)
